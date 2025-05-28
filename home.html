@@ -13,7 +13,6 @@
   margin-left: 13px;
   position: relative;
  line-height: 35px;
- top: -15px;
     }
     .subtitle
     {
@@ -43,7 +42,6 @@ font-size: 1.5rem;
     {
         vertical-align: middle;
   position: relative;
-  margin-top: -10px;
   margin-left: 13px;
   width: 62px;
   height: 72px;
@@ -59,31 +57,30 @@ font-size: 1.5rem;
 <body>
 
   <!-- Header -->
-  <header class="header-bg py-3">
+  <header class="header-bg d-none d-md-block">
                 <div class="skip">
                 <div class="container">
                 <div class="row">
-                <div class="col-xs-12">
-                <ul class="skip list-inline">
-                <li><a tabindex="-1" class="accessible" href="javascript:void(0)">Skip to Main Content</a></li>
+                <div class="col-xs-12 d-flex justify-content-end">
+                <ul class="skip list-inline my-2">
+                <li><a tabindex="-1" class="accessible text-white text-decoration-none" href="javascript:void(0)"><small> Skip to Main Content</small>  </a></li>
                 <li class="high-low"><i class="fa fa-adjust"></i></li>
-                <li class="fresize f-up">A<sup>+</sup></li>
-                <li class="fresize f-down">A<sup>-</sup></li>
+                <li class="fresize f-up px-2">A<sup>+</sup></li>
+                <li class="fresize f-down px-2">A<sup>-</sup></li>
                 </ul>
                 </div>
                 </div>
                 </div>
                 </div>
   </header>
- <header class="header-bg py-3">
+ <header class="header-bg py-3 d-none d-md-block">
  <div class="container">
 <div class="row branding">
 <div class="col-xs-12 d-flex">
 <div class="d-flex w-100 justify-content-between align-items-center">
           <div class="d-flex">
             <a href="//www.gst.gov.in/" title="Goods and Services Tax Home">
-<img data-ng-src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg"
-alt="Goods and Services Tax Home" class="img-logo"  src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg">
+<img data-ng-src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg" class="logo" alt="Goods and Services Tax Home" style="vertical-align:middle; position:relative;margin-left: 13px;width: 62px;height: 72px;" src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg">
 </a>
 <h1 class="site-title">
     <a href="//www.gst.gov.in/" style="color:white;text-decoration: none;">Goods and Services Tax<br>
@@ -108,87 +105,116 @@ alt="Goods and Services Tax Home" class="img-logo"  src="//static.gst.gov.in/uia
 </div>
   </header>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #083f6d;">
-  <div class="container">
-    <!-- Logo or Site Name -->
-    <a class="navbar-brand" href="#">
-      <!-- You can replace with actual logo <img src="logo.png" height="30" /> -->
-      GST Portal
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #ff5400;">
+  <div class="container-fluid ">
+       <a class="navbar-brand d-flex d-md-none navbar-toggler border-0" href="#">    
+                <img style="width: 35px;" data-ng-src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg" class="logo pe-2" alt="Goods and Services Tax Home" style="vertical-align:middle; position:relative;margin-left: 13px;width: 62px;height: 72px;" src="//static.gst.gov.in/uiassets/images/Emblem_of_India-white.svg">
+                
+                   <div class="subtitle"><span style="font-size: 1rem;" class="d-block">Goods and Services Tax</span>
+                                      <span style="font-size: .6rem; letter-spacing: -.5px;"> Government of India, States and Union Territories</div></span>
+        
+      </a>
 
-    <!-- Toggler/collapsing button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler shadow-none py-1 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item  border-secondary border-end px-3 py-1">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+        <li class="nav-item  border-secondary dropdown border-end px-3 py-1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Registration</a></li>
+            <li><a class="dropdown-item" href="#">Payments</a></li>
+            <li><a class="dropdown-item" href="#">User Services</a></li>
+            <li><a class="dropdown-item" href="#">Refunds</a></li>
+            <li><a class="dropdown-item" href="#">E-Way Bill System</a></li>
+            <li><a class="dropdown-item" href="#">Track Application Status</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+        <li class="nav-item  border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">GST Low</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help</a>
+         <li class="nav-item  border-secondary dropdown border-end px-3 py-1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Downloads
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Offline Tools</a></li>
+            <li><a class="dropdown-item" href="#">GST statistics</a></li>
+          </ul>
         </li>
+         <li class="nav-item  border-secondary dropdown border-end px-3 py-1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Search Taxpayer
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Search by GSTIN/UIN</a></li>
+            <li><a class="dropdown-item" href="#">Search by PAN</a></li>
+            <li><a class="dropdown-item" href="#">Search Temporary ID</a></li>
+            <li><a class="dropdown-item" href="#">Search Composition Taxpayer</a></li>
+          </ul>
+        </li>
+        <li class="nav-item border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">Help and Taxpayer Facilities</a>
+        </li>
+        <li class="nav-item  border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">E-Invoice</a>
+        </li>
+        <li class="nav-item  border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">News & Updates</a>
+        </li>
+        <li class="fw-normal border-0 h6 navbar-toggler nav-item  border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">News & Updates</a>
+        </li>
+        <li class="fw-normal border-0 h6 navbar-toggler nav-item  border-secondary border-end px-3 py-1">
+          <a class="nav-link" href="#">News & Updates</a>
+        </li>
+
       </ul>
     </div>
   </div>
 </nav>
+    
 
+    </div>
+    
+    <div class="a" style="height:500px">
+      <img class="w-100 h-100" src="https://www.financialexpress.com/wp-content/uploads/2022/09/Economy-growth-1.png" alt="images" srcset="">
   </div>
   <!-- Banner -->
   <section class="main-banner text-center">
     <div class="container">
       <h1>Welcome to GST Portal</h1>
       <p class="lead">One Nation, One Tax, One Market</p>
-      <a href="#" class="btn btn-primary mt-3">Login to GST</a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="py-5">
-    <div class="container text-center">
-      <h2>GST Services</h2>
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Taxpayer Services</h5>
-              <p class="card-text">Register, File Returns, Track Payments.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mt-3 mt-md-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Refunds</h5>
-              <p class="card-text">Track and manage your GST refunds easily.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mt-3 mt-md-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Help & Support</h5>
-              <p class="card-text">FAQs, Tutorials and Grievance Redressal.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer text-center p-0">
+    <div class="header-bg">
     <div class="container">
-      <p>&copy; 2025 GST Portal (Replica for educational use only)</p>
+      <div class="row py-3">
+        <div class="col-md-4">
+          @2025-26 Goods & Services Tax Network
+        </div>
+        <div class="col-md-4">
+         Site Updated On 28-05-2025
+        </div>
+        <div class="col-md-4">
+          Design and Developed by Softgrowthinfotech.com
+        </div>
+      </div>
+      
     </div>
+  </div>
+    <div class="py-3" style="background-color: #3270a3;">
+        Site best viewed at 1024 x 768 resolution in Microsoft Edge, Google Chrome 49+, Firefox 45+ and Safari 6+
+      </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
